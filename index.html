@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de sueldo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculadora de sueldo</h1>
+
+    <form id="calculadora">
+      <label for="salario-base">Salario base:</label>
+      <input
+        type="number"
+        id="salario-base"
+        name="salario-base"
+        placeholder="Ingrese el salario base"
+      />
+      <br />
+      <label for="horas-extra">Horas extras:</label>
+      <input
+        type="number"
+        id="horas-extra"
+        name="horas-extra"
+        placeholder="Ingrese las horas extras"
+      />
+      <br />
+      <label for="pago-hora-extra">Pago por hora extra:</label>
+      <input
+        type="number"
+        id="pago-hora-extra"
+        name="pago-hora-extra"
+        placeholder="Ingrese el pago por hora extra"
+      />
+      <br />
+      <label for="comision">Porcentaje de comisión:</label>
+      <input
+        type="number"
+        id="comision"
+        name="comision"
+        placeholder="Ingrese el porcentaje de comisión"
+      />
+      <br />
+      <label for="ventas-totales">Ventas totales:</label>
+      <input
+        type="number"
+        id="ventas-totales"
+        name="ventas-totales"
+        placeholder="Ingrese el valor total de las ventas"
+      />
+      <br />
+      <button type="button" id="calcular">Calcular</button>
+      <br />
+      <div id="resultado">
+        <p>Sueldo bruto: <span id="sueldo-bruto"></span></p>
+        <p>Comisión: <span id="comision-total"></span></p>
+        <p>Sueldo neto: <span id="sueldo-neto"></span></p>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
